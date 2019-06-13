@@ -11,7 +11,7 @@ class OrdersController < ApplicationController
 
     if order.valid?
       empty_cart!
-      OrderMailer.with(order: @order, line_items: @line_items).order_receipt.deliver_later
+      OrderMailer.order_receipt(@order, @line_items).deliver_later
       redirect_to order, notice: 'Your Order has been placed.'
     else
       redirect_to cart_path, flash: { error: order.errors.full_messages.first }
