@@ -6,6 +6,7 @@
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
+    <h4><%= @order.email %></h4>
   </div>
 
   <h3>Your Order Summary:</h3>
@@ -14,7 +15,6 @@
       <thead>
         <tr>
           <th colspan="2">Product</th>
-          <th>Unit Price</th>
           <th>Quantity</th>
           <th>Price</th>
         </tr>
@@ -24,8 +24,11 @@
       </tbody>
       <tfoot>
         <tr>
-          <th colspan="4">
+          <th colspan="2">
             TOTAL:
+          </th>
+          <th>
+            <%= @line_items.size %>
           </th>
           <th>
             <%= cart_subtotal_cents / 100.0 %>
