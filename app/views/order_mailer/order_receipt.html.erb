@@ -1,25 +1,20 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html>
   <head>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Order Summary</h1>
+    <h1>Order Summary for Order #<%= @order.id %></h1>
     <p>
-      We have received successfully placed your order. Below is a summary of your order. <br>
+      We have received successfully placed your order. Below is a summary of your order: <br>
     </p>
 
     <section class="orders-show">
-      <header class="page-header">
-        <h1>Order #<%= @order.id %></h1>
-      </header>
-
       <div class="order-summary jumbotron">
         <h4>Thank you for your order!</h4>
         <h4><%= @order.email %></h4>
       </div>
 
-      <h3>Your Order Summary:</h3>
       <div class="panel panel-default items">
         <table class="table table-bordered">
           <thead>
