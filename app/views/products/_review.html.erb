@@ -1,0 +1,12 @@
+<dl class="dl-horizontal">
+  <h3>Customer Reviews</h3>
+  <br/>
+  <%= @reviews.each do |review| %>
+    <dt>Description</dt>
+    <dd><%= review.description %></dd>
+    <dt>Rating</dt>
+    <dd><%= review.rating %></dd>
+    <dt>Reviewer</dt>
+    <dd><%= User.find(review.user_id).first_name %></dd>
+  <% end %>
+</dl>
