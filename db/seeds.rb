@@ -141,14 +141,14 @@ User.destroy_all
 User.create!({
   first_name: 'Thanos',
   last_name: 'Branderson',
-  email: 'thanos@gamil.com',
+  email: 'thanos@gmail.com',
   password: '123'
 })
 
 User.create!({
   first_name: 'Tony',
   last_name: 'Stark',
-  email: 'ironman@gamil.com',
+  email: 'ironman@gmail.com',
   password: '123'
 })
 
