@@ -11,4 +11,16 @@ class Product < ActiveRecord::Base
   validates :quantity, presence: true
   validates :category, presence: true
 
+  def overall_rating
+    rating = 0
+    if self.reviews.size == 0
+      return 0
+    else
+      self.reviews.each do |review|
+        rating += review.rating
+      end
+      return rating / self.reviews.size
+    end
+  end
+
 end
