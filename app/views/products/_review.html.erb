@@ -8,5 +8,8 @@
     <dd><%= review.rating %></dd>
     <dt>Reviewer</dt>
     <dd><%= User.find(review.user_id).first_name %></dd>
+    <% if User.find(review.user_id) == current_user %>
+      <%= link_to fa_icon('trash'), product_review_url(@product, review), class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %>
+    <% end %>
   <% end %>
 </dl>
