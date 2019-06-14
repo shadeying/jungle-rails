@@ -4,7 +4,6 @@ class OrderMailer < ApplicationMailer
 
   def order_receipt(order)
     @order = order
-    puts "---..............................................................#{order}"
     @line_items = order.line_items
     mail(to: @order.email, subject: "Order Receipt for ##{@order.id}")
   end
