@@ -9,7 +9,7 @@
       We have received successfully placed your order. Below is a summary of your order: <br>
     </p>
 
-    <section class="orders-show">
+    <section>
       <div class="order-summary jumbotron">
         <h4>Thank you for your order!</h4>
         <h4><%= @order.email %></h4>
@@ -19,7 +19,7 @@
         <table class="table table-bordered">
           <thead>
             <tr>
-              <th colspan="2">Product</th>
+              <th>Product</th>
               <th>Quantity</th>
             </tr>
           </thead>
@@ -28,7 +28,7 @@
           </tbody>
           <tfoot>
             <tr>
-              <th colspan="2">
+              <th>
                 TOTAL:
               </th>
               <th>
@@ -38,7 +38,7 @@
           </tfoot>
         </table>
       </div>
-      <p>Final amount: $ <%= @order.total_cents / 100.0%><p>
+      <p>Final amount: $ <%= @order.total_cents / 100.0 %><p>
     </section>
 
     <p>Thanks for shopping with us and have a great day!</p>
