@@ -132,5 +132,45 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+## USERS
+
+puts "Creating Users ..."
+
+User.destroy_all
+
+User.create!({
+  first_name: 'Thanos',
+  last_name: 'Branderson',
+  email: 'thanos@gamil.com',
+  password: '123'
+})
+
+User.create!({
+  first_name: 'Tony',
+  last_name: 'Stark',
+  email: 'ironman@gamil.com',
+  password: '123'
+})
+
+## REVIEWS
+
+puts "Creating Reviews ..."
+
+Review.destroy_all
+
+Review.create!({
+  user: User.first,
+  product: Product.first,
+  rating: 5,
+  description:'Its a really cool stuff!'
+})
+
+Review.create!({
+  user: User.last,
+  product: Product.last,
+  rating: 2,
+  description:'Dont really think its a stuff worth buying!'
+})
+
 
 puts "DONE!"
