@@ -1,13 +1,13 @@
 <section class="cart-show">
 
-  <header class="page-header">
-    <h1>My Cart</h1>
-  </header>
-
   <% if enhanced_cart.size == 0 %>
     <h1>You have nothing in you cart at the moment :|</h1>
     <%= link_to 'Start Shopping', [:root], class: 'btn btn-info' %>
   <% else %>
+    <header class="page-header">
+      <h1>My Cart</h1>
+    </header>
+
     <div class="panel panel-default items">
       <table class="table table-bordered">
         <thead>
