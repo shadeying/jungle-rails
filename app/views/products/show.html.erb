@@ -40,11 +40,11 @@
 </section>
 
 <% if current_user %>
-  <section class="reviews-new col-sm-7">
+  <section class="reviews-new">
     <h3>Write a review</h3>
     <hr>
     <div class="row">
-      <div class="col-sm-6">
+      <div>
         <%= form_for :review, url: product_reviews_path(@product) do |form| %>
 
           <div class="form-group">

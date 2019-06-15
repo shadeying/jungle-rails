@@ -31,7 +31,7 @@ main section.categories-show {
         position: absolute;
         bottom: 0;
         left:   0;
-        background-color: #EEE;
+        background-color: #DBF3FA;
         padding: 15px;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
@@ -45,7 +45,7 @@ main section.categories-show {
         top: 0;
         right: 0;
         padding: 10px;
-        background-color: #eee;
+        background-color: #DBF3FA;
         border-top-right-radius: 4px;
         border-bottom-left-radius: 20px;
         font-size: 0.8em;
@@ -97,4 +97,22 @@ main section.products-show {
 
 .no-rating-tag {
   color: salmon;
+}
+
+.reviews-new {
+  width: 100%;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 25px;
+  text-align: center;
+  background-color: #DBF3FA;
+
+  hr {
+    border-top: 1px solid #0277BD;
+  }
+}
+
+.reviews-container {
+  height: 300px;
+  overflow: auto;
 }
