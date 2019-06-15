@@ -3,8 +3,15 @@
 A mini e-commerce application built with Rails 4.2 for purposes of learning Rails by example.
 
 ## Screenshots
-!["Main page"](https://github.com/shadeying/ChattyApp/blob/master/docs/main.png?raw=true)
-!["Lots of colors!!!"](https://github.com/shadeying/ChattyApp/blob/master/docs/color.png?raw=true)
+!["Home page"](https://github.com/shadeying/jungle-rails/blob/master/docs/home.png?raw=true)
+!["Product show page"](https://github.com/shadeying/jungle-rails/blob/master/docs/product.png?raw=true)
+!["Admin authentication"](https://github.com/shadeying/jungle-rails/blob/master/docs/admin.png?raw=true)
+!["Cart show page"](https://github.com/shadeying/jungle-rails/blob/master/docs/cart.png?raw=true)
+!["User payment page"](https://github.com/shadeying/jungle-rails/blob/master/docs/user-payment.png?raw=true)
+!["User order page"](https://github.com/shadeying/jungle-rails/blob/master/docs/user-order.png?raw=true)
+!["Order receipt"](https://github.com/shadeying/ChattyApp/blob/master/docs/color.png?raw=true)
+!["Guest payment page"](https://github.com/shadeying/jungle-rails/blob/master/docs/guest-payment.png?raw=true)
+!["Guest order page"](https://github.com/shadeying/jungle-rails/blob/master/docs/guest-order.png?raw=true)
 
 ## Setup
 
