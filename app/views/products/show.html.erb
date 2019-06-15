@@ -45,7 +45,7 @@
     <hr>
     <div class="row">
       <div>
-        <%= form_for :review, url: product_reviews_path(@product) do |form| %>
+        <%= form_for [@product, @product.reviews.build] do |form| %>
 
           <div class="form-group">
             <%= form.label :rating%> &nbsp;
