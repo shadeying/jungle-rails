@@ -9,6 +9,8 @@
 // Global
 body {
   padding-top: 70px;
+  background-color: #022B3A;
+  color: #E1E5F2;
 }
 
 // Bootstrap adjustments
@@ -16,6 +18,7 @@ form.button_to {
   display: inline;
 }
 
-.navbar {
-  background-color: #DBF3FA;
+nav.navbar.navbar-default {
+  background-color: #BFDBF7;
+  color: #022B3A;
 }

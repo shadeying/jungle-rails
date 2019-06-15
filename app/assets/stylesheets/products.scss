@@ -1,3 +1,5 @@
+$primary-color: #BFDBF7;
+
 main section.products-index,
 main section.categories-show {
 
@@ -6,6 +8,7 @@ main section.categories-show {
     flex-direction:  row;
     flex-wrap:       wrap;
     justify-content: space-around;
+    color: #022B3A;
 
     .product {
       // flex:      1;
@@ -18,6 +21,7 @@ main section.categories-show {
       padding:       15px;
       padding-bottom: 80px;
       margin-top:    20px;
+      background-color: #FFFFFF;
       // margin:        10px;
 
       header img {
@@ -31,7 +35,7 @@ main section.categories-show {
         position: absolute;
         bottom: 0;
         left:   0;
-        background-color: #DBF3FA;
+        background-color: $primary-color;
         padding: 15px;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
@@ -45,7 +49,7 @@ main section.categories-show {
         top: 0;
         right: 0;
         padding: 10px;
-        background-color: #DBF3FA;
+        background-color: $primary-color;
         border-top-right-radius: 4px;
         border-bottom-left-radius: 20px;
         font-size: 0.8em;
@@ -100,12 +104,13 @@ main section.products-show {
 }
 
 .reviews-new {
-  width: 100%;
+  width: 85vw;
   border-radius: 20px;
   margin: 20px;
   padding: 25px;
   text-align: center;
-  background-color: #DBF3FA;
+  background-color: $primary-color;
+  color: #022B3A;
 
   hr {
     border-top: 1px solid #0277BD;
@@ -128,5 +133,22 @@ main section.products-show {
 h4.final-amount {
   float: right;
   margin-bottom: 30px;
-  color: #0277BD;
+  color: #BFDBF7;
+}
+
+h1 small {
+  color: #E1E5F2;
+}
+
+.panel-default {
+  color: #022B3A;
+}
+
+.navbar-default .navbar-brand {
+    color: #022B3A;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    background-color: #E1E5F2;
+    color: #022B3A;
 }
