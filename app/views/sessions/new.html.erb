@@ -13,13 +13,13 @@
       <%= form_tag [:login] do %>
 
         <div class="form-group">
-          Email
-          <%= email_field_tag :email%>
+          <label>Email</label>
+          <%= email_field_tag :email %>
         </div>
 
         <div class="form-group">
-          Password
-          <%= password_field_tag :password%>
+          <label>Password</label>
+          <%= password_field_tag :password %>
         </div>
 
         <%= submit_tag 'Login', class: 'btn btn-primary' %>

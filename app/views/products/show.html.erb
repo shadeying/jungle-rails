@@ -1,7 +1,11 @@
 <section class="products-show">
 
   <header class="page-header">
-    <h1><%= link_to @product.category.name, @product.category %> &raquo; <%= @product.name %></h1>
+    <h1><%= link_to @product.category.name, @product.category %> &raquo; <%= @product.name %> &nbsp;
+      <% for i in 1..@product.overall_rating do %>
+        <span>⭐️</span>
+      <% end %>
+    </h1>
   </header>
 
   <article class="product-detail">
@@ -21,7 +25,10 @@
           <dt>Quantity</dt>
           <dd><%= @product.quantity %></dd>
           <dt>Price</dt>
-          <dd><%= @product.price %></dd>
+          <dd>$ <%= @product.price %></dd>
+        </dl>
+        <dl class="dl-horizontal">
+
         </dl>
         <br>
         <%= render 'review' %>
@@ -33,7 +40,7 @@
 </section>
 
 <% if current_user %>
-  <section class="reviews-new">
+  <section class="reviews-new col-sm-7">
     <h3>Write a review</h3>
     <hr>
     <div class="row">
@@ -41,13 +48,13 @@
         <%= form_for :review, url: product_reviews_path(@product) do |form| %>
 
           <div class="form-group">
-            <%= form.label :description %>
-            <%= form.text_field :description, class: 'form-control' %>
+            <%= form.label :rating%> &nbsp;
+            <%= form.select :rating, [1, 2, 3, 4, 5], class: 'form-control' %>
           </div>
 
           <div class="form-group">
-            <%= form.label :rating%>
-            <%= form.number_field :rating, in: 1...6, class: 'form-control' %>
+            <%= form.label :description %>
+            <%= form.text_field :description, class: 'form-control' %>
           </div>
 
           <%= form.submit 'Submit Review', class: 'btn btn-primary' %>
