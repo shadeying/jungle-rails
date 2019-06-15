@@ -2,6 +2,9 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of learning Rails by example.
 
+## Screenshots
+!["Main page"](https://github.com/shadeying/ChattyApp/blob/master/docs/main.png?raw=true)
+!["Lots of colors!!!"](https://github.com/shadeying/ChattyApp/blob/master/docs/color.png?raw=true)
 
 ## Setup
 
