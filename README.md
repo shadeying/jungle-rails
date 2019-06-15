@@ -9,7 +9,7 @@ A mini e-commerce application built with Rails 4.2 for purposes of learning Rail
 !["Cart show page"](https://github.com/shadeying/jungle-rails/blob/master/docs/cart.png?raw=true)
 !["User payment page"](https://github.com/shadeying/jungle-rails/blob/master/docs/user-payment.png?raw=true)
 !["User order page"](https://github.com/shadeying/jungle-rails/blob/master/docs/user-order.png?raw=true)
-!["Order receipt"](https://github.com/shadeying/ChattyApp/blob/master/docs/color.png?raw=true)
+!["Order receipt"](https://github.com/shadeying/jungle-rails/blob/master/docs/order-receipt.png?raw=true)
 !["Guest payment page"](https://github.com/shadeying/jungle-rails/blob/master/docs/guest-payment.png?raw=true)
 !["Guest order page"](https://github.com/shadeying/jungle-rails/blob/master/docs/guest-order.png?raw=true)
 
