@@ -142,14 +142,16 @@ User.create!({
   first_name: 'Thanos',
   last_name: 'Branderson',
   email: 'thanos@gmail.com',
-  password: '123'
+  password: '123',
+  password_confirmation: '123'
 })
 
 User.create!({
   first_name: 'Tony',
   last_name: 'Stark',
   email: 'ironman@gmail.com',
-  password: '123'
+  password: '123',
+  password_confirmation: '123'
 })
 
 ## REVIEWS
