@@ -7,11 +7,9 @@ class User < ActiveRecord::Base
   has_secure_password
 
   def self.authenticate_with_credentials(email, password)
-    user = self.find_by(email: email).try(:authenticate, password)
-    if user
+    new_email = email.remove(' ').downcase
+    if user = self.find_by(email: new_email).try(:authenticate, password)
       user
-    else
-      nil
     end
   end
 

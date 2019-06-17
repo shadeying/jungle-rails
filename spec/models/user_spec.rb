@@ -92,6 +92,24 @@ RSpec.describe User, type: :model do
       result = User.authenticate_with_credentials('tony@gmail.com','12345')
       expect(result).to eql(subject)
     end
+
+    it 'should be login successfully with spaces before/after email address' do
+      subject.save!
+      result = User.authenticate_with_credentials(' tony@gmail.com','12345')
+      expect(result).to eql(subject)
+
+      result = User.authenticate_with_credentials('tony@gmail.com   ','12345')
+      expect(result).to eql(subject)
+
+      result = User.authenticate_with_credentials(' tony@gmail.com ','12345')
+      expect(result).to eql(subject)
+    end
+
+    it 'should be login successfully with wrong cases of email address' do
+      subject.save!
+      result = User.authenticate_with_credentials('TOnY@gmail.com','12345')
+      expect(result).to eql(subject)
+    end
   end
 
 end
