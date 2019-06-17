@@ -29,6 +29,12 @@ RSpec.describe User, type: :model do
       it 'is valid with matching and non-empty fields' do
         expect(subject).to be_valid
       end
+
+      it 'has to be minimum of length 5' do
+        subject.password = '1234'
+        subject.password_confirmation = '1234'
+        expect(subject).to_not be_valid
+      end
     end
 
     context 'Email field -' do
