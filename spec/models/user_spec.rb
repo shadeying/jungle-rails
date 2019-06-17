@@ -1,9 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-
-  describe 'Validations:' do
-    subject {
+  subject {
       described_class.new(
         first_name: 'Tony',
         last_name: 'Stark',
@@ -13,6 +11,7 @@ RSpec.describe User, type: :model do
       )
     }
 
+  describe 'Validations:' do
     context 'Password and password_confirmation fields -' do
       it 'is not valid without matching fields' do
         subject.password_confirmation = 'abcde'
@@ -82,10 +81,31 @@ RSpec.describe User, type: :model do
   end
 
   describe '.authenticate_with_credentials' do
+    it 'should return nil if failed' do
+      subject.save!
+      result = User.authenticate_with_credentials('tony@gmail.com','123')
+      expect(result).to be_nil
+    end
 
+    it 'should return instance of user if success' do
+      subject.save!
+      result = User.authenticate_with_credentials('tony@gmail.com','12345')
+      expect(result).to eql(subject)
+    end
   end
 
 end
+
+
+
+
+
+
+
+
+
+
+
 
 
 
