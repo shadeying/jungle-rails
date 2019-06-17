@@ -15,7 +15,7 @@ RSpec.describe Product, type: :model do
       @product.save!
     end
 
-    it "is valid with valid attributes" do
+    it 'is valid with valid attributes' do
       expect(@product).to be_valid
     end
 
