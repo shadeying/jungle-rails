@@ -72,7 +72,7 @@ cat1.products.create!({
   description: Faker::Hipster.paragraph(4),
   image: open_asset('apparel5.jpg'),
   quantity: 8,
-  price: 1_225.00
+  price: 1225.00
 })
 
 cat1.products.create!({
@@ -105,7 +105,7 @@ cat2.products.create!({
   description: Faker::Hipster.paragraph(4),
   image: open_asset('electronics3.jpg'),
   quantity: 32,
-  price: 2_026.29
+  price: 2026.29
 })
 
 cat3.products.create!({
@@ -113,7 +113,7 @@ cat3.products.create!({
   description: Faker::Hipster.paragraph(4),
   image: open_asset('furniture1.jpg'),
   quantity: 320,
-  price: 3_052.00
+  price: 3052.00
 })
 
 cat3.products.create!({
@@ -129,7 +129,7 @@ cat3.products.create!({
   description: Faker::Hipster.paragraph(4),
   image: open_asset('furniture3.jpg'),
   quantity: 23,
-  price: 2_483.75
+  price: 2483.75
 })
 
 ## USERS
@@ -142,16 +142,16 @@ User.create!({
   first_name: 'Thanos',
   last_name: 'Branderson',
   email: 'thanos@gmail.com',
-  password: '123',
-  password_confirmation: '123'
+  password: '12345',
+  password_confirmation: '12345'
 })
 
 User.create!({
   first_name: 'Tony',
   last_name: 'Stark',
   email: 'ironman@gmail.com',
-  password: '123',
-  password_confirmation: '123'
+  password: '12345',
+  password_confirmation: '12345'
 })
 
 ## REVIEWS
