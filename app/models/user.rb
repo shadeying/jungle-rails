@@ -1,8 +1,10 @@
 class User < ActiveRecord::Base
 
-  validates :first_name, :last_name, :email, :password, :password_confirmation, presence: true
+  validates :first_name, :last_name, :email, presence: true
   validates :email, uniqueness: { case_sensitive: false }
-  validates :password, length: { minimum: 5 }
+  validates :password,
+    presence: { on: :create },
+    length: { minimum: 5, allow_blank: true }
   has_many :reviews
   has_secure_password
 

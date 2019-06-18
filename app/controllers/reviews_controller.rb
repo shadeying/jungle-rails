@@ -10,10 +10,6 @@ class ReviewsController < ApplicationController
       product: @product,
       user: current_user
     )
-    puts "-----------------------------------#{@review.description}"
-    puts "-----------------------------------Rating: #{@review.rating}"
-    puts "-----------------------------------#{@review.product}"
-    puts "-----------------------------------User: #{@review.user_id}"
     @review.save
 
     redirect_to product_path(@product)
