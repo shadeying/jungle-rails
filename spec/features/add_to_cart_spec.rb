@@ -18,13 +18,14 @@ RSpec.feature "Visitor add product to cart from home page", type: :feature, js: 
   scenario "Cart increases by one when add button is clicked" do
     # ACT
     visit root_path
+    expect(page).to have_content 'My Cart (0)'
     click_on 'Add'
 
     #VERIFY
     expect(page).to have_content 'My Cart (1)'
 
     # DEBUG
-    save_screenshot
+    # save_screenshot
   end
 
 end
