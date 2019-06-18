@@ -8,9 +8,12 @@ class ReviewsController < ApplicationController
       description: review_params['description'],
       rating: review_params['rating'],
       product: @product,
-      user_id: current_user.id
+      user: current_user
     )
-
+    puts "-----------------------------------#{@review.description}"
+    puts "-----------------------------------Rating: #{@review.rating}"
+    puts "-----------------------------------#{@review.product}"
+    puts "-----------------------------------User: #{@review.user_id}"
     @review.save
 
     redirect_to product_path(@product)
