@@ -15,7 +15,7 @@ RSpec.feature "Visitor navigates from home page to product detail page", type: :
     )
   end
 
-  scenario "They see product details" do
+  scenario "They see product details when product title clicked" do
     # ACT
     visit root_path
     click_on 'Boring random white long-sleeves shirt'
@@ -27,7 +27,7 @@ RSpec.feature "Visitor navigates from home page to product detail page", type: :
     # save_screenshot
   end
 
-  scenario "They see product details" do
+  scenario "They see product details when details button clicked" do
     # ACT
     visit root_path
     click_on 'Details »'
@@ -36,7 +36,7 @@ RSpec.feature "Visitor navigates from home page to product detail page", type: :
     expect(page).to have_css 'article.product-detail'
 
     # DEBUG
-    save_screenshot
+    # save_screenshot
   end
 
 end
